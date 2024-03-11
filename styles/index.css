@@ -1,0 +1,46 @@
+:root{
+    --block-width: 100px;
+    --block-height: 100px;
+    --distance: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 10px;
+    padding: var(--distance) 0 0 var(--distance);
+
+    width: 100vw;
+    min-height: calc(var(--block-height) + var(--distance));
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.circle{
+    margin: 0 var(--distance) var(--distance) 0;
+
+    width: var(--block-width);
+    height: var(--block-height);
+    background-color: red;
+
+    border-radius: 50%;
+}
+
+.buttons{
+    margin: 10px;
+    padding: 15px;
+
+    display: flex;   
+}
+
+#add-circle, #del-circle{
+    margin: 10px;
+    padding: 4px;
+
+    cursor: pointer;
+}
